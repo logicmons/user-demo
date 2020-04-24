@@ -1,0 +1,19 @@
+server:
+  port: 8085
+spring:
+  datasource:
+    url: jdbc:mysql://49.235.235.143:3306/leyou??useUnicode=true&characterEncoding=utf8
+    username: root
+    password: Root123@
+  rabbitmq:
+    host: 49.235.235.143
+    username: leyou
+    password: leyou
+    virtual-host: /leyou
+  redis:
+    host: 49.235.235.143
+    port: 9999
+mybatis:
+  type-aliases-package: com.leyou.user.mapper
+  configuration:
+    map-underscore-to-camel-case: true
